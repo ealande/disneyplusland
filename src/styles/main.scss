@@ -2,6 +2,7 @@
 @use 'variables';
 @use 'shows';
 @use 'plans';
+@use 'available_devices';
 
 @font-face{
     font-family: Avenir;
@@ -110,7 +111,7 @@ body {
             position: absolute;
             top: 0;
             height: 100%;
-            width: calc(50%-5.6vw);
+            width: calc(50% - 5.6vw);
             left: 50%;
             display: flex;
             flex-direction: column;
