@@ -8,12 +8,26 @@
         <link rel="stylesheet" href="./dist/css/main.css">
     </head>
     <body>
-            <h1>Hellow</h1>
+            <header class="header">
+                <div class="header__container">
+                    <h1 class="">
+                        <img class="header__logo" src="./dist/images/disneyplus.svg" alt="disneylogo">
+                    </h1>
+                    <ul class="header__links">
+                        <li class="header__links__item">
+                            <a href="#" class="button button--secondary">Sign up now!</a>
+                        </li>
+                        <li class="header__links__item">
+                            <a href="#" class="button button--dark">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
             <section class="hero">
                 <div class="hero__content">
-                    <h1 class="hero__content__branding">
+                    <div class="hero__content__branding">
                         <img src="./dist/images/disneyplus.svg" alt="disneylogo">
-                    </h1>
+                    </div>
                     <h3 class="title--small">
                         Enjoy the greatest stories, all in one place.
                     </h3>
@@ -247,6 +261,43 @@
                     </li>
                 </ul>
             </section>
+            <footer class="footer">
+                <div class="footer__container">
+                <img class="footer__logo" src="/dist/images/disneyplus.svg" alt="disney">
+                <ul class="footer__links">
+                    <li class="footer__links__item">
+                        <div class="language-selector">
+                            <img src="./dist/images/icones/globe.svg" alt="worldglobe">
+                            <select>
+                                <option selected>English</option>
+                                <option>Portuguese-BR</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">Terms of service</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">Privacy policy</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">Data Protection</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">Interest-Based Ads</a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">Supported Devices</a>
+                    </li>
+                </ul>
+                <p class="text--small">
+                    © ️2023 Disney, Disney+ and The Walt Disney Company. All rights reserved. Paid subscription service. Content is subject to availability.
+                </p>
+                <p class="text--small">
+                    Disney+ is a paid service, based on subscription and subject to terms and conditions. The Disney+ service is marketed by The Walt Disney Company (Brazil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo / SP - CEP 04578-903, Brazil and CNPJ / M 73.042.962 / 0004-20
+                </p>
+            </div>
+            </footer>
             <script src="./src/main.js"></script>
     </body>
 </html>

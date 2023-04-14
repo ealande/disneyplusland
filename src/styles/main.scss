@@ -4,6 +4,9 @@
 @use 'plans';
 @use 'available_devices';
 @use 'faq';
+@use 'footer';
+@use 'header';
+
 
 @font-face{
     font-family: Avenir;
@@ -22,6 +25,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
+    list-style: none;
 }
 
 body {
@@ -70,16 +74,35 @@ body {
 }
 
 .button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 60px;;
     font-size: 18px;
     color: variables.$secondaryColorText;
-    background-color: #6421ff;
+    background-color: variables.$backgroundColorMainButton;
     text-transform: uppercase;
     border-radius: 4px;
-    margin-top: 2vw;
-    margin-bottom: 8px;
+    padding: 8px 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 1px solid variables.$backgroundColorMainButton;
+    &:hover{
+        background-color: lighten(variables.$backgroundColorMainButton, 3%);
+    }
+    &--secondary {
+        background-color: variables.$backgroundColorSecondaryButton;
+
+        &:hover{
+            background-color: lighten(variables.$backgroundColorSecondaryButton, 3%);
+        }
+    }
+    
+    &--dark {
+        background-color: rgba(variables.$backgroundColorDarkButton, 0.8);
+        border-color: variables.$secondaryColorText
+    }
 }
 
 .image-text-section {
